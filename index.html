@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Tailwind</title>
+
+    <!-- link tailwind -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- link swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    
+    <!-- text -->
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body class=" min-h-screen relative text-base font-space-grotesk text-d9d9d9 bg-black">
+    <header class="hidden md:block fixed top-5 left-0 right-0 w-[90%] mx-auto z-[101] bg-transparent">
+        <div class=" flex  justify-between items-center">
+            <img class="w-[125px] h-[40px]" src="./assets/images/Logo.svg" alt="Logo">
+            <div class="flex gap-2 items-center">
+                <img class="w-[28px] h-[28px]" src="./assets/images/Frame.svg" alt="Frame" srcset="">
+            </div>
+        </div>
+    </header>
+    <!-- mobile -->
+    <header class="lg:hidden fixed top-0 left-0 right-0 left-0 h-[64px] z-[101] bg-292929">
+        <div class=" flex h-full justify-between items-center">
+            <img class="w-[125px] h-[40px] ml-4" src="./assets/images/Logo.svg" alt="Logo">
+            <div class="flex gap-2 items-center cursor-pointer">
+                <img class="w-[48px] h-[48px]" src="./assets/images/Menu Icon.svg" alt="Frame">
+            </div>
+        </div>
+    </header>
+
+    <div class=" relative mt-[64px] lg:mt-0">
+        <!-- Swiper -->
+        <div class="swiper mySwiper w-full relative">
+            <div class="swiper-wrapper w-full overflow-hidden" id="bannerContainer"></div>
+
+            <div class="absolute bottom-10 right-10 px-6 py-3 rounded-md flex items-center gap-4" id="contactInfo"></div>
+
+            <div class="swiper-pagination absolute mb-10 pr-20 xl:ml-16 max-md:hidden flex justify-end xl:justify-start items-center gap-x-4"></div>
+
+            <div class="xl:absolute bottom-2 xl:left-1/2 xl:-translate-x-1/2 flex items-center justify-center z-50 text-[32px] font-bold font-big-shoulders-display">
+                <button class="py-4 px-3  bg-[#009FE3] rounded-md -mr-[6px] z-[51] -skew-x-[25deg]">
+                    <span class="inline-block leading-[32px] font-bold skew-x-[25deg]">RESERVE</span>
+                </button>
+                <button class="py-4 px-3 bg-[#E30613]  rounded-md  -skew-x-[25deg]">
+                    <span class="inline-block leading-[32px] font-bold skew-x-[25deg]">NOW!</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class=" relative">
+        <div class=" max-w-[1580px] w-[90%] mx-auto flex flex-col gap-20 my-20">
+            <!-- registration -->
+            <div class="grid auto-rows-auto lg:grid-cols-2 justify-between gap-[78px]">
+                <!-- Tiêu đề -->
+                <div class="flex flex-col gap-8">
+                    <h2 class="text-5xl lg:text-7xl font-bold uppercase font-big-shoulders-text text-d9d9d9">Registration</h2>
+                    <p class="">
+                        For organizational and security reasons, every visitor to the FUN arena Cheb must register before entering the attraction. At the reception, your registration will be completed and you will receive a loyalty card which you will use for our services.
+                    </p>
+                </div>
+        
+                <!-- Danh sách các bước -->
+                <div class=" grid auto-rows-auto lg:grid-rows-3 gap-y-6">
+                    <!-- Bước 1 -->     
+                    <div class="flex justify-between items-start ">
+                        <div class="  w-[40px] rounded-md font-bold text-blue-500 mr-4  bg-292929 -skew-x-[25deg] flex items-end h-fit mt-3">
+                            <p class="text-7xl leading-[50px] skew-x-[25deg] ">1</p>
+                        </div>
+                        <div class=" flex flex-col flex-1">
+                            <div class="  p-4 rounded-lg w-full flex items-center bg-292929 -skew-x-[25deg]">
+                                <p class="text-2xl font-bold skew-x-[25deg]">Choose an Attraction</p>
+                            </div>
+                            <p class=" mt-2 font-normal px-4">Choose from the attractions of the FUN arena.</p>
+                        </div>
+                    </div>
+                    
+        
+                    <!-- Bước 2 -->
+                    <div class="flex">
+                        <div class="  w-[40px] rounded-md font-bold text-blue-500 mr-4  bg-292929 -skew-x-[25deg] flex items-end h-fit mt-3">
+                            <p class="text-7xl leading-[50px] skew-x-[25deg] ">2</p>
+                        </div>
+                        <div class="lg:mb-[80px] rounded-lg w-full flex justify-between items-center">
+                            <div class=" flex flex-col flex-1">
+                                <div class="  p-4 rounded-lg w-full flex items-center bg-292929 -skew-x-[25deg]">
+                                    <p class="text-2xl font-bold skew-x-[25deg]">Register</p>
+                                </div>
+                                <div class=" flex ">
+                                    <p class=" font-normal mt-2 px-4">You can register at the reception or by clicking the button above from the comfort of your home.</p>
+                                    <div class=" relative mt-2 md:-mt-11 z-[10] shrink-0">
+                                        <a href="https://web.racefacer.com/kiosk/kartarenacheb" class=" absolute -top-13 left-5 md:top-0 md:-left-[98px]  bg-[#E30613] hover:bg-[#FF4D4D] font-bold text-sm px-2 py-1 rounded-lg ">Click here</a>
+                                        <img src="./assets/images/qrcode.png" alt="QR Code" class="w-[128px] h-[128px] rounded-xl">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Bước 3 -->
+                    <div class="flex justify-between items-start ">
+                        <div class="  w-[40px] rounded-md font-bold text-blue-500 mr-4  bg-292929 -skew-x-[25deg] flex items-end h-fit mt-3">
+                            <p class="text-7xl leading-[50px] skew-x-[25deg] ">3</p>
+                        </div>
+                        <div class=" flex flex-col">
+                            <div class="  p-4 rounded-lg w-full flex items-center bg-292929 -skew-x-[25deg]">
+                                <p class="text-2xl font-bold skew-x-[25deg]">Have Fun</p>
+                            </div>
+                            <p class=" font-normal mt-2 px-4">Thank you for your online registrations. For each purchase you get points, which you can apply to our services and attractions then. We look forward to you!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- New entertainment  -->
+            <div>
+                <div class="flex flex-col lg:gap-10 lg:ml-[240px]">
+                    <h1 class="text-3xl sm:text-5xl lg:text-7xl font-bold uppercase ">New Entertainment <br> Centre Near Cheb</h1>
+                    <div class=" flex flex-col lg:flex-row items-center lg:justify-between mt-4 gap-3">
+                        <p class=" max-lg:w-full max-lg:justify-end "> 
+                            We have been entertaining children and adults in western Bohemia for more than 10 years!
+                        </p>
+                        <a href="" class=" max-lg:w-full max-lg:justify-end flex justify-between items-center gap-2 hover:text-[#FF4D4D]"> 
+                            <span class=" font-medium">find more about us </span>
+                            <i class="fa-solid fa-arrow-right text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class=" mt-[39px] rounded-3xl overflow-hidden">
+                    <img src="./assets/images/banner1.jpg" alt="banner" class=" w-full aspect-[1280/567] object-cover">
+                </div>
+            </div>
+    
+            <!-- Attractions  -->
+            <div>
+                <div class="flex flex-col lg:flex-row justify-between items-center gap-8 mt-20">
+                    <h1 class=" max-lg:w-full max-lg:text-start text-3xl sm:text-5xl lg:text-7xl font-bold uppercase ">Our Attractions</h1>
+                    <a href="" class=" flex justify-between max-lg:justify-end  max-lg:w-full items-center gap-7 hover:text-[#FF4D4D]"> 
+                        <span class=" font-medium">Multiple activities at Fun Arena Cheb </span>
+                        <div class="flex">
+                                <i class="fa-solid fa-caret-left text-red-600 text-xl"></i>
+                                <i class="fa-solid fa-caret-left text-blue-500 text-xl"></i>
+                        </div>
+                    </a>  
+                </div>
+                <div class=" mt-[39px] h-fit">
+                    <div class="flex flex-col lg:flex-row">
+                        <!-- Menu Section -->
+                        <div id="menu" class="flex flex-col justify-center gap-3 w-full lg:w-[38%] mr-10">
+                        </div>
+                
+                        <!-- Content Section -->
+                        <div class="relative flex-1 rounded-xl overflow-hidden z-[22] mt-5 lg:mt-0 ">
+                            <img id="content-image" src="" alt="Content Image" class="w-full h-full object-cover">
+                            <div class=" absolute bottom-0 right-0 left-0 flex justify-between items-end">
+                                <p id="content-description" class=" w-[40%] font-normal ml-5 mb-10"></p>
+                                <button class=" py-3 px-6 rounded-full bg-d9d9d9 text-292929 hover:cursor-pointer hover:text-d9d9d9 hover:bg-292929">
+                                    Find out more
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Gift -->
+            <div class=" relative w-full 2xl:w-[70%] mx-auto xl:mt-0 mt-10">
+                <div class=" absolute -top-[50%] md:-top-[55%] lg:top-1/2 lg:-translate-y-1/2 max-lg:left-1/2 max-lg:-translate-x-1/2 lg:left-0 ">
+                    <img src="./assets/images/gift.png" alt="Gift" class=" w-[120px] h-[120px] xl:w-[220px] xl:h-[220px]">
+                </div>
+                <div class=" flex flex-col items-center bg-red-600 rounded-xl sm:rounded-full px-6 py-3 shadow-lg">
+                        <div class=" 2xl:ml-[120px]">
+                            <p class=" text-xl sm:text-2xl leading-[30px] xl:text-[32px] xl:leading-[41px] text-center font-medium">Make somebody happy with a gift voucher</p>
+                            <p class="">The voucher is valid for all services. Unforgettable experiences for children and adults!</p>
+                        </div>
+                </div>
+                <!-- Button -->
+                <a href="https://vouchers.funarenacheb.cz/c/darkovy-poukaz" class=" max-lg:flex max-lg:mt-4 w-fit mx-auto lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:-right-10 bg-white text-292929 font-semibold px-6 py-3 rounded-xl hover:cursor-pointer ">
+                    Buy now
+                </a>
+            </div>
+        </div>
+
+        <img src="./assets/images/Logo-noct.svg" alt="Logo" class="h-[240px] absolute top-[480px] -left-[17%] rotate-[90deg] opacity-20">
+    </div>
+
+    <footer class="  border-t border-[#191919] text-white">
+        <div class=" max-w-[1580px] w-[90%] mx-auto py-20 ">
+            <div class=" mx-auto grid grid:rows-3 sm:grid-cols-3 gap-6 items-center">
+                <!-- Logo + Social Icons -->
+                <div class="flex items-start">
+                    <img src="./assets/images/logoFooter.svg" alt="Logo" class="w-40 mb-4">
+                </div>
+    
+                <!-- Description -->
+                <div class="text-left md:text-center text-sm opacity-80">
+                    <p>New entertainment centre FUN arena Cheb.</p>
+                    <p>You will find entertainment and sports activities for children and adults here.</p>
+                </div>
+    
+                <!-- Contact Info -->
+                <div class="sm:text-right text-sm opacity-80 ">
+                    <p>Potočiště 3, 350 02 Odrava</p>
+                    <p>fun@funarenacheb.cz</p>
+                    <p>+420 757 878 891</p>
+                </div>
+            </div>
+            <div class=" grid grid-rows-2 sm:grid-cols-2 items-center justify-between mt-5">
+                <div class="flex items-center space-x-4 text-lg pl-3">
+                    <a href="#" class="hover:text-gray-400"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-gray-400"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-gray-400"><i class="fas fa-envelope"></i></a>
+                    <a href="#" class="hover:text-gray-400"><i class="fas fa-phone"></i></a>
+                </div>
+                <!-- Copyright + Scroll Up Button -->
+                <div class="flex items-center justify-end">
+                    <p class="text-sm opacity-70 mr-10">© 2025 FUN Arena Cheb. All rights Reserved.</p>
+                    <a href="#" class="bg-292929 hover:bg-gray-600 text-white p-2 rounded-full h-fit">
+                        <i class="fas fa-chevron-up"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+    </footer>
+
+
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    const banners = [
+        {
+            image: "./assets/images/banner1.jpg",
+            title: "GO-KARTS",
+            description: "Enjoy an adrenaline ride in any weather. Outdoor track and indoor hall at a professional level.",
+            contact: {
+                title: "EVERYDAY FUN FOR EVERYONE",
+                description: "A few kilometers from Cheb, we have built a new entertainment centre FUN Arena Cheb for you. You will find entertainment and sports activities for children and adults here.",
+                phone: "+420 737 878 891"
+            }
+        },
+        {
+            image: "./assets/images/banner2.png",
+            title: "JUMPARENA",
+            description: "Enjoy an adrenaline ride in any weather. Outdoor track and indoor hall at a professional level with Sodi go-karts.",
+            contact: {
+                title: "EVERYDAY FUN FOR EVERYONE",
+                description: "A few kilometers from Cheb, we have built a new entertainment centre FUN Arena Cheb for you. You will find entertainment and sports activities for children and adults here.",
+                phone: "+420 737 878 891"
+            }
+        },
+        {
+            image: "./assets/images/banner3.jpg",
+            title: "Virtuální realita",
+            description: "Experience the rush of high-speed kart racing with us.",
+            contact: {
+                title: "EVERYDAY FUN FOR EVERYONE",
+                description: "A few kilometers from Cheb, we have built a new entertainment centre FUN Arena Cheb for you. You will find entertainment and sports activities for children and adults here.",
+                phone: "+420 737 878 891"
+            }
+        },
+        {
+            image: "./assets/images/banner4.jpg",
+            title: "MULTIBALL",
+            description: "Interaktivní sportovní a herní konzole, která z pohybu a vzdělávání dělá opravdovou zábavu. Velké množství her zaujme všechny věkové kategorie.",
+            contact: {
+                title: "EVERYDAY FUN FOR EVERYONE",
+                description: "A few kilometers from Cheb, we have built a new entertainment centre FUN Arena Cheb for you. You will find entertainment and sports activities for children and adults here.",
+                phone: "+420 737 878 891"
+            }
+        },
+        {
+            image: "./assets/images/banner5.png",
+            title: "Laserová střelnice",
+            description: "Vyzkoušejte si nebo vypilujte svou mušku! Laserová střelnice se třemi režimy střelby na čas otestuje nejen vaši přesnost, ale také rychlost a postřeh.",
+            contact: {
+                title: "EVERYDAY FUN FOR EVERYONE",
+                description: "A few kilometers from Cheb, we have built a new entertainment centre FUN Arena Cheb for you. You will find entertainment and sports activities for children and adults here.",
+                phone: "+420 737 878 891"
+            }
+        },
+    ];
+
+    const bannerContainer = document.getElementById("bannerContainer");
+    const contactInfo = document.getElementById("contactInfo");
+    banners.forEach(banner => {
+        const slide = document.createElement("div");
+        slide.className = "swiper-slide relative";
+        slide.innerHTML = `
+            <div class=" w-full aspect-[21/10] overflow-hidden"><img src="${banner.image}" alt="${banner.title}" class="w-full object-cover"></div>
+
+            <div class="absolute inset-0 flex flex-col justify-end items-start px-5 lg:px-16 pb-[222px] md:pb-[232px] xl:pb-[92px] gap-y-6 text-white">
+                <h1 class=" font-bold big-showder-text text-[32px] lg:text-[80px] xl:text-[120px]">${banner.title}</h1>
+                <div class="flex gap-x-4 items-center mb-3">
+                    <p class="max-w-[300px] break-words text-d9d9d9 font-normal text-sm">${banner.description}</p>
+                    <button class="relative px-6 py-3 text-white border rounded-lg border-white text-base
+                                -skew-x-[25deg]
+                                hover:bg-white hover:text-black transition duration-300">
+                                <span class="inline-block skew-x-[25deg] max-lg:hidden">
+                                    Find out more
+                                </span>
+                                <i class="hidden max-lg:inline-block skew-x-[25deg] fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class=" xl:absolute xl:bottom-10 xl:right-16 bg-black/50 p-4 rounded-lg">
+                <div class="relative mr-5 xl:mr-0 xl:text-right ">
+                    <div class="hidden xl:inline-block absolute -top-[54px] -left-[32px]">
+                        <img src="./assets/images/co.png" alt="co" class="w-[87px] h-[87px]">
+                    </div>
+                    <h2 class="big-showder-text text-[32px] text-d9d9d9 mb-3">${banner.contact.title}</h2>
+                </div>
+               
+                <p class="text-d9d9d9 text-sm xl:max-w-[382px] break-words">${banner.contact.description}</p>
+                <div class=" flex items-center justify-end gap-x-2 bg-[#D9D9D9] max-w-fit rounded-full p-1 mt-4 xl:mt-0 xl:absolute right-0 -bottom-[20px]">
+                    <span class="font-bold text-292929">${banner.contact.phone}</span>
+                    <img src="./assets/images/phone.svg" alt="${banner.title}" class="w-[30px] h-[30px]">
+                </div>
+            </div>
+        `;
+
+    
+
+        bannerContainer.appendChild(slide);
+    });
+
+    
+
+
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 0,
+        loop: true,
+        autoplay: {
+            delay: 10000,
+            disableOnInteraction: false,
+        },
+        effect: "fade",
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+  </script>
+
+  <!-- our attractions -->
+  <script>
+    const menuItems = [
+            { id: 1, title: "KARTARENA", image: "./assets/images/att1.png", contentImage: "./assets/images/att1.png", description: "Exciting kart racing tracks for all skill levels!" },
+            { id: 2, title: "JUMPARENA", image: "./assets/images/att2.png", contentImage: "./assets/images/att2.png", description: "Arena with lots of attractions for children and adults of all ages. Trampolines, climbing wall, ninja track and other attractions." },
+            { id: 3, title: "VIRTUAL REALITY", image: "./assets/images/att3.png", contentImage: "./assets/images/att3.png", description: "Immerse yourself in a virtual world like never before." },
+            { id: 4, title: "MULTIBALL", image: "./assets/images/att4.png", contentImage: "./assets/images/att4.png", description: "Challenge yourself with interactive sports games." },
+            { id: 5, title: "LASER SHOOTING RANGE", image: "./assets/images/att5.png", contentImage: "./assets/images/att5.png", description: "Experience intense laser shooting competitions." },
+            { id: 6, title: "COMPANY EVENTS", image: "./assets/images/att6.png", contentImage: "./assets/images/att6.png", description: "Host your corporate events in an exciting venue." }
+    ];
+
+    const menuContainer = document.getElementById("menu");
+    const contentImage = document.getElementById("content-image");
+    const contentDescription = document.getElementById("content-description");
+
+    let currentContentItem = null;
+    function updateContent(item) {
+        contentImage.src = item.contentImage;
+        contentDescription.textContent = item.description;
+
+        // Xóa trạng thái active cũ
+        document.querySelectorAll(".menu-item").forEach(el => el.classList.remove("bg-292929"));
+        document.querySelectorAll(".menu-item .item-text").forEach(el => el.classList.remove("text-white"));
+        document.querySelectorAll(".menu-item .check").forEach(el => el.classList.remove("overlay-active"));
+        document.querySelectorAll(".menu-item .check").forEach(el => el.classList.add("overlay"));
+        document.querySelectorAll(".menu-sub-wrapper").forEach(el => el.classList.add("hidden"));
+        // Thêm trạng thái active mới
+        document.querySelector(`#menu-item-${item.id} .check`).classList.remove("overlay");
+        document.querySelector(`#menu-item-${item.id} .check`).classList.add("overlay-active");
+        document.getElementById(`menu-item-${item.id}`).classList.add("bg-292929");
+        document.querySelector(`#menu-item-${item.id} .item-text`).classList.add("text-white");
+        
+        if (window.innerWidth >= 1024) {
+            document.querySelector(`.menu-sub-wrapper-${item.id}`).classList.remove("hidden");
+        }
+        currentContentItem = item.id;
+    }
+    window.addEventListener("resize", () => {
+        if (window.innerWidth >= 1024 && currentContentItem) {
+            // Hiển thị lại menuSubWrapper của item đang chọn
+            document.querySelector(`.menu-sub-wrapper-${currentContentItem}`).classList.remove("hidden");
+        } else {
+            // Ẩn tất cả menuSubWrapper khi xuống dưới lg
+            document.querySelectorAll(".menu-sub-wrapper").forEach(el => el.classList.add("hidden"));
+        }
+    });
+
+    menuItems.forEach(item => {
+        const menuItem = document.createElement("div");
+        menuItem.id = `menu-item-${item.id}`;
+        menuItem.className = "menu-item text-292929 bg-d9d9d9 font-normal cursor-pointer bg-black overflow-hidden rounded-2xl -skew-x-[25deg]";
+        menuItem.innerHTML = `
+            <div class="skew-x-[25deg] flex items-center justify-start w-full ">
+                <div class=" w-[60%] relative -ml-[8%] group  ">
+                    <img src="${item.image}" alt="${item.title}" class="relative w-[115%]  align-center h-[60px] object-cover ">
+                    <div class="absolute inset-0 overlay check"></div>
+                </div>
+                <div class=" relative flex-grow">
+                    <p class=" item-text absolute right-8 top-1/2 -translate-y-1/2 font-normal text-[32px] whitespace-nowrap">${item.title}</p>
+                </div>
+            </div>
+        `;
+
+        const menuSubWrapper = document.createElement("div");
+        menuSubWrapper.className = ` hidden menu-sub-wrapper-${item.id} menu-sub-wrapper absolute top-0 bottom-0 -skew-x-[25deg] -right-[54px] w-[68px] bg-292929 z-[21]`;
+        const menuWWrapper = document.createElement("div");
+        menuWWrapper.className = "relative ";
+        menuWWrapper.appendChild(menuItem);
+        menuWWrapper.appendChild(menuSubWrapper);
+        menuWWrapper.onclick = () => updateContent(item);
+        menuContainer.appendChild(menuWWrapper);
+    });
+
+    // Load nội dung đầu tiên mặc định
+    updateContent(menuItems[0]);
+  </script>
+</body>
+
+
+</html>
